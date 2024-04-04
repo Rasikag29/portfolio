@@ -1,0 +1,353 @@
+/* hero background image */
+.bgimage {
+    height:100vh;
+    margin: 0em 0em 0em 0em;
+    background: url('computer.jpg');
+    background-size:cover;
+    position:relative;
+}
+.bg{
+    
+    height: 700px;
+    
+}
+
+
+img{
+display: block;
+padding: 0.5px;
+
+}
+
+.profile {
+width:30%;
+height: 100px;
+
+}
+.profile img{
+width:100%;
+height: 100px;
+border: 1px soild black;
+border-radius: 50px;
+margin-top: -20px
+}
+.LINKA1{
+    width: 140px;
+    height: 70px;
+    color:#1e24d25d;
+    font-weight: 70;
+    border-radius: 100px;
+    text-transform: uppercase;
+    margin: 1px;
+    overflow: hidden;
+    position: relative;
+}
+.LINKA1::before{
+    content: "";
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(80deg,transparent,rgba(58, 63, 224, 0.479),transparent,(rgb(204, 188, 9)));
+    transform: translate(-100%);
+    transition: 1.0s;
+    position: absolute;
+}
+.LINKA1:hover{
+   background: transparent;
+   
+   box-shadow:0 0 20px 5px #1224e7,2px 2px 1px 2px #f73408  
+
+}
+
+.LINKA{
+    color: rgb(99, 20, 20);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+   
+}
+
+.LINKA{
+    width: 140px;
+    height: 70px;
+    color:whitesmoke;
+    font-weight: 70;
+    border-radius: 100px;
+    text-transform: uppercase;
+    margin: 1px;
+    overflow: hidden;
+    position: relative;
+}
+.LINKA::before{
+    content: "";
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,transparent,rgba(41, 41, 224, 0.479),transparent,(rgb(6, 6, 142)));
+    transform: translate(-100%);
+    transition: 1.0s;
+    position: absolute;
+}
+.LINKA:hover{
+   background: transparent;
+   background-image: url("day.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+   
+   box-shadow:1px 0 20px 5px #0963a7,3px 3px 5px 3px rgb(23, 23, 239)
+}
+.one,.two,.three,.four,.five{
+    width: 150px;
+    padding: 2px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.LINKA3{
+        margin-left: -300px;
+    gap:10px;
+}
+.LINKA{
+    margin-left: -300px;
+}
+.Toggle{
+    margin-left: 100px;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: transparent;
+}
+.marq{
+    background-image: url("colur.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+}
+
+.names{
+    text-align: start;
+}
+.animate{
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(-100px);
+    }
+    33%{
+        transform: translateX(-10px) 
+    }
+    66%{
+        transform: translateX(50px) 
+    }
+    100%{
+        transform: translateX(0);
+       
+        
+    }
+}
+/*name and poffesion*/
+.marq2{
+    font-size: 2rem;
+    color: rgb(13, 183, 225);
+    text-align: start;
+    background-image: url("lighr.png");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent
+    
+}
+.animate1{
+    animation-name: slide2;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+}
+@keyframes slide2{
+    0%{
+        transform: translateX(-300px);
+    }
+    33%{
+    }
+    66%{
+        transform: translateX(10px) 
+    }
+    100%{
+        transform: translateX(0);
+       
+        
+    }
+}/*about*/
+.myimg{
+    height:200px;
+    width: 200px;
+
+}
+#about{
+    filter:opacity(-100%);
+    border: 1px solid black;
+    background-image: url("space.jpg");
+
+   color: white;
+    font-family:'Trebuchet MS','Lucida Grande';
+    font-style: oblique;
+    padding: 20px;
+    
+    
+}
+.tag1{
+    text-align: left;
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+.cards.card:hover{
+    transform: scale(1.1 ,1.1);
+}
+.cards:hover>.card:not(:hover){
+    filter:blur(10px);
+    transform: scale(0.9,0.9);
+
+}
+.text-center{
+    font-size: 36px;
+    font-family:  Verdana, sans-serif;
+    font-style: oblique;
+}
+#services{
+    background-image: url("darkred.jpg");
+}
+.imgcard{
+    background-image: url("lighr.png");
+}
+.projecttitle{
+    color: white;
+   
+}
+#education{
+    color: white;
+    background-image: url("yelg.jpg");
+    bottom: 200px;
+}
+.edu{
+color: white;
+}
+.imgcard2{
+    background-image: url("lighr.png");
+}
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+    margin-top: -24px;
+}
+/* spacing on all sections */
+#about, #services, #project,#education, #contact {
+    
+    margin-top: 4rem;
+    padding-top: 4rem;
+  
+}
+#contact {
+
+    color: whitesmoke;
+    padding-bottom: 4rem;
+    background-image: url("feather.jpg");
+}
+#ZX{
+  
+    font-size: 25px;
+    align-items: center;
+   color: whitesmoke;
+    font-style: oblique;
+   
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#clearinput2{
+    height: 150px;
+    width: 250px;
+}
+#res{
+  
+    text-decoration:none;
+    color:aliceblue;
+
+}
+#contact-form{
+    margin-top: -300px;
+    margin-left: 700px;
+
+}
+.detail{
+    
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    font-style: oblique;
+    color: whitesmoke;
+}

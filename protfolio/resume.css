@@ -1,0 +1,84 @@
+img{
+height: 100vh;
+        width: 100%;
+       
+        
+}
+.lap1 img{
+    width: 100%;
+    height: 500px;
+}
+ .animi{
+    border: 1px solid black;
+    display: flex;
+    flex-direction:row;
+    
+} 
+/* .img1{
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:forwards;
+} */
+@keyframes zigZag {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(20px, -20px);
+    }
+    50% {
+      transform: translate(0, -40px);
+    }
+    75% {
+      transform: translate(20px, -60px);
+    }
+  }
+  
+  .lap1{
+    position: relative;
+    width: 200px; /* Adjust the width based on your images */
+    overflow: hidden;
+  }
+  
+  .{
+    position: absolute;
+    width: 100%;
+    height: auto;
+  }
+  
+  .image-container img:nth-child(1) {
+    clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+    animation: zigZag 4s infinite linear;
+  }
+  
+  .image-container img:nth-child(2) {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+    animation: zigZag 4s infinite linear 2s; /* Delay the animation by 2 seconds for the second image */
+  }
+/* @keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(100px) skew(10deg,-20deg)
+    }
+    40%{
+        transform: translateX(-100px) skew(20deg);
+    }
+    60%{
+        transform: translateY(100px) skew(20deg);
+    }
+    80%{
+        transform: translateY(-100px) skew(10deg,-20deg);
+    }
+    100%{
+        transform: translateX(0);
+        border: 1px solid blue;
+        border-radius: 2px 2px 7px 2px blue;
+        background-color: aquamarine;
+    }
+} */
